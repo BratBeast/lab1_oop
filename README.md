@@ -18,12 +18,6 @@ mvn clean verify
 java -Dfile.encoding=UTF-8 -jar target/household-appliances-1.0.0.jar
 ```
 
-У папці `demo` є вже зібрана програма. Її можна запустити без Maven:
-
-```bash
-java -Dfile.encoding=UTF-8 -jar demo/household-appliances-1.0.0.jar
-```
-
 Після зміни коду потрібно знову зібрати проєкт і запускати JAR із `target`.
 Якщо Windows неправильно показує українські літери, виконати `chcp 65001`.
 
@@ -78,7 +72,7 @@ mvn test
 
 `mvn clean verify` також перевіряє покриття коду через JaCoCo.
 Після збірки звіт доступний у `target/site/jacoco/index.html`.
-Копія звіту в архіві: `verification/jacoco/index.html`.
+Для актуального звіту виконайте `mvn clean verify`.
 Результати: [docs/verification.md](docs/verification.md).
 
 ## GitHub
